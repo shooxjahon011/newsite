@@ -22,7 +22,7 @@ import telebot
 from telebot import types
 
 # Bot ma'lumotlari
-TOKEN = "7833987841:AAF5Zm6THDhoEv8BeHl7rBxWdKk-TKGcxtw"
+TOKEN = ""
 ADMIN_ID = "8513245980"
 bot = telebot.TeleBot(TOKEN)
 
@@ -146,6 +146,7 @@ def callback_handler(call):
             )
             if tg_id:
                 bot.send_message(tg_id, "✅ Profilingiz qayta faollashtirildi! Endi kirishingiz mumkin.")
+
 
 
 bot.polling(none_stop=True)
